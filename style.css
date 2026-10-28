@@ -1,0 +1,226 @@
+/* creating the tile gris for 8x9 */
+#grid {
+  display: grid;
+  gap: 6px;
+  margin-top: 24px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+}
+
+.tile {
+  aspect-ratio: 1;
+  border: 2px solid #d3d6da;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* making the grid fit a phone screen*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 24px;
+}
+
+main {
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+#grid {
+  width: 100%;
+}
+
+/* code to color the tiles based on the accuracy of the letter input */
+.tile.correct {
+  background-color: #6aaa64;
+  border-color: #6aaa64;
+  color: white;
+}
+
+.tile.present {
+  background-color: #c9b458;
+  border-color: #c9b458;
+  color: white;
+}
+
+.tile.absent {
+  background-color: #787c7e;
+  border-color: #787c7e;
+  color: white;
+}
+
+body {
+  background: #5a1822;
+  color: #233d35;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+main {
+  padding: 28px 22px;
+  background: #fffdf7;
+  border: 1px solid #e3ddce;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px #233d3514;
+}
+
+h1 {
+  margin: 4px 0 8px;
+  font-family: "Lilita One", cursive;
+  font-size: 2.7rem;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #b15e45;
+  font-size: 0.95rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
+
+}
+
+.intro {
+  margin: 0;
+  margin-top: 2px;
+  color: #64736a;
+  text-align: center;
+  font-family: "Patrick Hand", cursive;
+
+}
+
+.tip {
+  margin: 18px 0 0;
+  color: #64736a;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Patrick Hand", cursive;
+}
+
+.tile {
+  border-color: #c9cbbb;
+}
+
+/* styling for the win button */
+.button.gift-card-button {
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  appearance: none;
+  line-height: 0;
+  cursor: pointer;
+}
+
+button.gift-card-button img {
+  display: block;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 0;
+  border-radius: 50%;
+}
+  
+
+
+.buttonText {
+  margin-top: 1px;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+
+h2 {
+  margin: 4px 0 8px;
+  font-family: "Lilita One", cursive;
+  font-size: 2.7rem;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+#confetti {
+  pointer-events: none;
+}
+
+.confetti-piece {
+  position: fixed;
+  top: -12px;
+  left: var(--left);
+  width: 10px;
+  height: 14px;
+  background: var(--color);
+  animation: fall var(--duration) var(--delay) linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translate(var(--drift), 105vh) rotate(720deg);
+  }
+}
+
+.win-screen {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.win-screen[hidden] {
+  display: none;
+}
+.surprise-image {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  animation: horizontal-spin 4s linear infinite;
+}
+
+@keyframes horizontal-spin {
+  from {
+    transform: perspective(800px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(800px) rotateY(360deg);
+  }
+
+}
+
+button.gift-card-button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 0;
+}
+
+button.gift-card-button img {
+  display: block;
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.lose-screen {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.lose-screen[hidden] {
+  display: none;
+}

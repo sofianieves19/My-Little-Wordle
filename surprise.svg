@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <title>Original gift card illustration</title>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Floating confetti -->
+    <path d="M91 137l16 16m0-16l-16 16" stroke="#D96F58" stroke-width="12"/>
+    <circle cx="414" cy="144" r="10" fill="#E5BD58" stroke="#5A1822" stroke-width="6"/>
+    <path d="M413 350l17 17m0-17l-17 17" stroke="#D96F58" stroke-width="10"/>
+    <circle cx="105" cy="363" r="8" fill="#6F927D" stroke="#5A1822" stroke-width="5"/>
+
+    <!-- Gift card -->
+    <rect x="50" y="116" width="412" height="280" rx="42" fill="#FFFDF7" stroke="#5A1822" stroke-width="14"/>
+    <path d="M71 171h370" stroke="#E8DFCF" stroke-width="5"/>
+    <circle cx="126" cy="144" r="7" fill="#D96F58"/>
+    <circle cx="148" cy="144" r="7" fill="#E5BD58"/>
+    <circle cx="170" cy="144" r="7" fill="#6F927D"/>
+
+    <!-- Gift box -->
+    <rect x="291" y="252" width="129" height="92" rx="13" fill="#D96F58" stroke="#5A1822" stroke-width="9"/>
+    <path d="M355 253v91" stroke="#FFF3D3" stroke-width="12"/>
+    <path d="M275 230h161v37H275z" fill="#E5BD58" stroke="#5A1822" stroke-width="9"/>
+    <path d="M355 230c-35 0-51-11-51-28 0-12 9-19 20-19 18 0 31 22 31 47Zm0 0c35 0 51-11 51-28 0-12-9-19-20-19-18 0-31 22-31 47Z" fill="#FFF3D3" stroke="#5A1822" stroke-width="9"/>
+
+    <!-- Gift card wording -->
+    <text x="174" y="230" fill="#5A1822" font-family="Trebuchet MS, sans-serif" font-size="27" font-weight="700" letter-spacing="1.2" text-anchor="middle">A LITTLE</text>
+    <text x="174" y="267" fill="#D96F58" font-family="Trebuchet MS, sans-serif" font-size="34" font-weight="900" letter-spacing="1" text-anchor="middle">TREAT!</text>
+    <path d="M141 303h66" stroke="#E5BD58" stroke-width="8"/>
+    <path d="M161 322c8-11 18-11 26 0-8 12-18 12-26 0Z" fill="#6F927D" stroke="#5A1822" stroke-width="4"/>
+  </g>
+</svg>

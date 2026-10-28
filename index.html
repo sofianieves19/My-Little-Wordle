@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofia's Mystery Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section id="game-screen">
+      <h1>Sofia's Mystery Game</h1>
+      <p class="eyebrow">A LITTLE WORDLE FOR YOU</p>
+      <p class="intro">Type in your guess, hit Enter to submit and see if you're righttttt!!</p>
+      <div id="grid" aria-label="Guess grid"></div>
+      <p class="tip">hint: your guess does NOT have to be a real word, happy guessing</p>
+      </section>
+
+      <section id="win-screen" class="win-screen" hidden>
+      <div id="confetti" aria-hidden="true"></div>
+      <p class="eyebrow">PUZZLE SOLVED</p>
+      <h2>YAY you won!</h2>
+      <p class="intro">Good job! Isn't this so cool btw! look at me go</p>
+      <button class="gift-card-button" id="surprise-button" type="button">
+        <img src="wordleButton.png" alt="Reveal your surprise" />
+      </button>
+
+      <img
+        id="surprise-image"
+        class="surprise-image"
+        src="surprise.svg"
+        alt="Your surprise"
+        hidden
+      />
+
+      <p class="buttonText">Click on my gorgeous face for a surpise! (p.s. def not a scam)</p>
+      </section>
+
+      <section id="lose-screen" class="lose-screen" hidden>
+        <p class="eyebrow">UH OHHHHHH</p>
+        <h2>Oops, you did not win.</h2>
+        <p class="intro">Well this is awkward... hit the refresh and try again.</p>
+        <p class="tip">and maybe do better this time, just saying</p>
+      </section>
+    </main>
+  </body>
+</html>
